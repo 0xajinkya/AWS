@@ -15,6 +15,16 @@ const tags = [
 	}
 ];
 
+/**
+ * Tags a user with the provided tags
+ * @param {string} user_name - The username to tag.
+ * @param {string[]} tags - The tags to apply to the user. 
+ * @returns {Promise} - A promise resolving with the response from the API.
+ * @description
+ - Creates a TagUserCommand with the provided username and tags.
+ - Sends the command to the client and awaits the response. 
+ - Logs the response or any errors to the console.
+*/
 const addTagsToUser = async () => {
 	try {
 		const command = new TagUserCommand({

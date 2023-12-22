@@ -27,6 +27,15 @@ const policyDoc = {
     ]
 };
 
+/**
+ * Creates a new policy asynchronously
+ * @param {void} - No arguments passed. 
+ * @returns {Promise} - Resolves with the result of creating the policy.
+ * @description
+ - Creates a new policy with the name "JSAccessPolicy" and the policy document defined in policyDoc
+- Sends the command to create the policy to the client asynchronously 
+- Logs the result or error to the console
+*/
 const createIAMPolicy= async() => {
     try {
         const command = new CreatePolicyCommand({

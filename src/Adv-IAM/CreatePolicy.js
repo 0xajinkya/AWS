@@ -15,6 +15,16 @@ const policy_doc = {
     ]
 };
 
+/**
+ * Creates a policy asynchronously
+ * @param {Object} policy_name - Name of the policy to create. 
+ * @param {Object} policy_doc - Policy document object.
+ * @returns {Object} res - Response from creating the policy.
+ * @description
+ - Creates a CreatePolicyCommand with the policy name and document.
+- Sends the command to the client asynchronously and awaits the response.
+- Logs the response or any error to the console.
+*/
 export const createIAMPolicy = async() => {
     try {
         const command = new CreatePolicyCommand({

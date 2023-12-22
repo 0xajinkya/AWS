@@ -1,3 +1,4 @@
+
 const { IAMClient, UpdateUserCommand } = require("@aws-sdk/client-iam");
 
 const iamClient = new IAMClient();

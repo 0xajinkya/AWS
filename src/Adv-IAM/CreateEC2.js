@@ -14,6 +14,16 @@ const params = {
     }
 };
 
+/**
+ * Launches an EC2 instance asynchronously
+ * @param {object} params - Parameters for launching EC2 instance. 
+ * @returns {object} Response from AWS - EC2 instance launch response.
+ * @description
+ - Creates a RunInstancesCommand with the provided parameters.
+ - Sends the command to AWS using the EC2 client asynchronously. 
+ - Handles success response by logging the result.
+ - Handles error by logging the error.
+*/
 const launchEC2 = async() => {
     try {
         const command = new RunInstancesCommand(params);

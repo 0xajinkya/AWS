@@ -6,4 +6,5 @@ const params = {
 };
 
 const command = new DeleteUserCommand(params);
+
 const res = client.send(command).then((data) => console.log(data));
