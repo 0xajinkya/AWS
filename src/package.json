@@ -12,6 +12,7 @@
   "dependencies": {
     "@aws-sdk/client-ec2": "^3.478.0",
     "@aws-sdk/client-iam": "^3.478.0",
+    "@aws-sdk/client-ses": "^3.478.0",
     "@aws-sdk/credential-provider-ini": "^3.474.0",
     "aws-sdk": "^2.1520.0"
   }
